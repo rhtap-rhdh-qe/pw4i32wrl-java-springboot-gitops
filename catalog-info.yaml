@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pw4i32wrl-java-springboot-gitops
+  description: This is GitOps manifest for pw4i32wrl-java-springboot   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: pw4i32wrl-java-springboot
+    janus-idp.io/tekton: pw4i32wrl-java-springboot 
+    backstage.io/kubernetes-id: pw4i32wrl-java-springboot 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:pw4i32wrl-java-springboot

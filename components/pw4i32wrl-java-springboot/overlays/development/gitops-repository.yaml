@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: pw4i32wrl-java-springboot-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/pw4i32wrl-java-springboot-gitops
